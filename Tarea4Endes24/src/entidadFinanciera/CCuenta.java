@@ -8,10 +8,10 @@ package entidadFinanciera;
 
 public class CCuenta {
 
-    private static final String ERRORCANTIDADNEGATIVA = "No se puede ingresar una cantidad negativa";
 	/**
      * Nombre de la persona titular
      */
+    private static final String ERRORCANTIDADNEGATIVA = "No se puede ingresar una cantidad negativa";
     private String nombre;
     private String cuenta;
     private double saldo;
@@ -28,7 +28,45 @@ public class CCuenta {
         saldo=sal;
     }
     
-    public double estado(){
+    
+    
+    public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getCuenta() {
+		return cuenta;
+	}
+
+	public void setCuenta(String cuenta) {
+		this.cuenta = cuenta;
+	}
+
+	public double getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
+	public double getTipoInterés() {
+		return tipoInterés;
+	}
+
+	public void setTipoInterés(double tipoInterés) {
+		this.tipoInterés = tipoInterés;
+	}
+
+	public static String getErrorcantidadnegativa() {
+		return ERRORCANTIDADNEGATIVA;
+	}
+
+	public double estado(){
         return this.saldo;
     }
 
